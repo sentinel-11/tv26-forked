@@ -79,14 +79,6 @@ function NavbarTv() {
             >
               All Events
             </button>
-            {location.pathname !== "/technovista/register" && (
-              <button
-                onClick={() => handleNavigate("/technovista/register")}
-                className="font-mono bg-[#daa425] text-black px-5 py-1.5 rounded-lg font-semibold hover:bg-[#f2ca46] transition-colors"
-              >
-                Register
-              </button>
-            )}
           </div>
 
           {/* Mobile Menu Icon */}

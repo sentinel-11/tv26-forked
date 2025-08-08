@@ -68,14 +68,12 @@ const DebugOrDie = () => {
     <p className="text-base sm:text-xl font-bold text-[#daa425] mb-6">
       🕵️‍♂️ Debug or Die - Technovista 2025
     </p>
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSeHLiqUCi0CIQaGfUdryvyWvJNIk-yVxtfqSgpGsTmCZ41lBg/closedform"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block bg-[#daa425] text-black font-semibold text-sm sm:text-lg px-5 py-2 sm:px-6 sm:py-3 rounded-full shadow-md hover:bg-yellow-500 transition-all duration-300"
-    >
-      Register Now
-    </a>
+    <div className="inline-block bg-gradient-to-r from-[#daa425]/20 to-yellow-400/20 border border-[#daa425]/40 text-[#daa425] font-semibold text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-lg backdrop-blur-sm">
+      <span className="flex items-center">
+        <span className="mr-2">✓</span>
+        Event Concluded
+      </span>
+    </div>
   </div>
 </div>
 

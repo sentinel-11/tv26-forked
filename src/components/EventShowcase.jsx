@@ -87,7 +87,7 @@ export default function EventShowcase() {
                       </div>
 
                       {/* Register/Know more link */}
-                      {event.url ? (
+                      {/* {event.url ? (
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
@@ -112,7 +112,7 @@ export default function EventShowcase() {
                             Register
                           </span>
                         </a>
-                      )}
+                      )} */}
                     </motion.div>
                   )}
                 </AnimatePresence>

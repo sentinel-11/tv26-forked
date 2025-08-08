@@ -39,7 +39,7 @@ function LayoutWrapper() {
           ))}
         </Routes>
       </div>
-      <PromoSection />
+      {/* <PromoSection /> */}
     </>
   );
 }

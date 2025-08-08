@@ -210,26 +210,6 @@ const EventsTV = () => {
           <div className="w-24 h-1 bg-yellow-500 mx-auto mt-2" />
         </div>
 
-        <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4 mb-12 shadow-md backdrop-blur-lg">
-          <div className="flex-1 text-center sm:text-left">
-            <p className="text-sm sm:text-base text-yellow-200 font-medium">
-              Please register yourself before registering for individual events.
-            </p>
-            {/* Mobile-only additional info */}
-            <p className="sm:hidden text-xs text-yellow-300/80 mt-1">
-              (Required for all events)
-            </p>
-          </div>
-
-          <div className="w-full sm:w-auto flex justify-center sm:justify-end">
-            <button
-              onClick={() => navigate("/technovista/register")}
-              className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold px-6 py-2 rounded-xl transition-all duration-300 hover:scale-105 shadow hover:shadow-yellow-500/30 whitespace-nowrap"
-            >
-              Register Here
-            </button>
-          </div>
-        </div>
         <div className="w-[90%] lg:w-full flex flex-col lg:flex-row gap-4 mb-12 bg-gradient-to-r from-black/60 via-black/40 to-transparent rounded-2xl border border-yellow-500/20 backdrop-blur-sm mx-auto">
           <div className="w-full lg:w-1/2 sm:p-4">
             <img

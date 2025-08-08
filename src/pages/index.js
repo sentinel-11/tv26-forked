@@ -6,7 +6,7 @@ import TvDevs from "./TvDevs";
 import Hackathon from "./Hackathon";
 import DataDetective from "./DataDetective";
 import DebugOrDie from "./DebugOrDie";
-import Updates from "./Updates";
+// import Updates from "./Updates";
 import TermsAndConditions from "./TermsAndConditions";
 
 const router = [
@@ -19,7 +19,7 @@ const router = [
   { path: "/technovista/devs", component: TvDevs },
   { path: "/technovista/events/data-detective", component: DataDetective },
   { path: "/technovista/events/debug-or-die", component: DebugOrDie },
-  { path: "/technovista/updates", component: Updates},
+  // { path: "/technovista/updates", component: Updates},
   { path: "*", component: LandingTV },
 ];
 

@@ -206,12 +206,6 @@ const FooterTV = () => {
                   Events
                 </a>
                 <a
-                  href="/technovista/register"
-                  className="font-mono text-sm sm:text-base lg:text-lg hover:text-yellow-400 transform transition-all duration-300 hover:translate-x-1 text-center"
-                >
-                  Register
-                </a>
-                <a
                   href="/technovista/devs"
                   className="font-mono text-sm sm:text-base lg:text-lg hover:text-yellow-400 transform transition-all duration-300 hover:translate-x-1 text-center"
                 >

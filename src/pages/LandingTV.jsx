@@ -345,12 +345,6 @@ const LandingTV = () => {
 
           <div className="flex gap-6 justify-center flex-wrap">
             <button
-              className="font-sans cta-button px-4 sm:px-6 py-2 sm:py-3 text-base sm:text-lg md:text-lg bg-[#daa425] text-black rounded-2xl shadow-[0_0_15px_rgba(255,215,0,0.5)] font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.8)] transition-all duration-300 ease-in-out opacity-0 scale-90"
-              onClick={() => navigate("/technovista/register")}
-            >
-              Register Now
-            </button>
-            <button
               className="font-sans cta-button px-4 sm:px-6 py-2 sm:py-3 text-base sm:text-lg md:text-lg text-[#daa425] rounded-2xl shadow-[0_0_15px_rgba(255,215,0,0.5)] font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.8)] transition-all duration-300 ease-in-out opacity-0 scale-90"
               onClick={() => navigate("/technovista")}
             >

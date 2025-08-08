@@ -111,14 +111,10 @@ const Hackathon = () => {
                     View Problem Statements
                     {/* <span className="ml-2 text-lg">📄</span> */}
                   </a>
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSetieR4PdZLpUl0UqUd9lE0Quypwcym4BHGkFss2exhOzgLhg/viewform"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-transparent text-[#daa425] border border-[#daa425] px-6 py-3 rounded-lg font-bold text-base shadow-md hover:bg-[#daa425]/10 hover:shadow-[0_0_12px_rgba(218,164,37,0.5)] transition-all duration-300 hover:scale-105 transform"
-                  >
-                    Register Now
-                  </a>
+                  <div className="inline-flex items-center bg-gradient-to-r from-[#daa425]/20 to-yellow-400/20 border border-[#daa425]/40 text-[#daa425] px-5 py-2 rounded-lg font-bold text-sm shadow-lg backdrop-blur-sm">
+                    <span className="mr-2">✓</span>
+                    Event Concluded
+                  </div>
                 </div>
               </div>
             </div>
@@ -371,14 +367,11 @@ const Hackathon = () => {
               <p className="text-xl font-bold text-[#daa425] mb-6">
                 Technovista Hackathon 2025
               </p>
-              <button
-                onClick={() => navigate("/technovista/register")}
-                className="inline-flex items-center bg-gradient-to-r from-[#daa425] to-yellow-400 text-black px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:from-yellow-400 hover:to-[#daa425] transition-all duration-300 hover:scale-105 hover:shadow-xl transform"
-              >
-                <span className="mr-2 text-xl">🚀</span>
-                Register for Hackathon
-                <span className="ml-2 text-xl">🎯</span>
-              </button>
+              <div className="inline-flex items-center bg-gradient-to-r from-[#daa425]/20 to-yellow-400/20 border border-[#daa425]/40 text-[#daa425] px-6 py-3 rounded-xl font-bold text-base shadow-lg backdrop-blur-sm">
+                <span className="mr-2 text-lg">✓</span>
+                Event Concluded
+                <span className="ml-2 text-lg">✓</span>
+              </div>
             </div>
           </div>
         </div>

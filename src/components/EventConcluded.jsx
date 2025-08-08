@@ -44,19 +44,21 @@ function EventConcluded() {
           className="space-y-4"
         >
           <p className="text-lg md:text-xl text-[#dba72e] mb-4">
-            We&apos;ll be back next year.
+            Thank you for participating in Technovista 2025.
+          </p>
+          <p className="text-lg md:text-xl text-[#dba72e] mb-4">
+            See you next year.
           </p>
           <p className="text-base md:text-lg text-gray-400">
-            To learn more about what we do,{" "}
+            Learn more at{" "}
             <a
               href="https://www.vjdataquesters.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#dba72e] hover:text-yellow-400 underline transition-colors duration-300"
             >
-              visit our website
+              vjdataquesters.com
             </a>
-            .
           </p>
         </motion.div>
       </div>
