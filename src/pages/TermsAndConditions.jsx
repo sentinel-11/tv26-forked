@@ -18,8 +18,8 @@ const TermsAndConditions = () => {
       className="min-h-screen bg-black text-white"
       style={{
         // CSS variables for theming
-        "--tv-primary": "#f2ca46",
-        "--tv-secondary": "#daa425",
+        "--tv-primary": "#00FF41",
+        "--tv-secondary": "#00FF41",
         "--tv-border": "rgba(218, 164, 37, 0.2)",
         "--tv-bg-highlight": "rgba(242, 202, 70, 0.05)",
         "--tv-card-bg": "rgba(255, 255, 255, 0.05)",
@@ -37,7 +37,7 @@ const TermsAndConditions = () => {
         >
 {/* Header */}
 <div className="mb-8 text-center">
-  <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[var(--tv-primary)] via-yellow-300 to-[var(--tv-secondary)] bg-clip-text text-transparent">
+  <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[var(--tv-primary)] via-green-400 to-[var(--tv-secondary)] bg-clip-text text-transparent">
     Terms & Conditions
   </h1>
 </div>

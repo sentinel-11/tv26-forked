@@ -3,7 +3,7 @@ export const EVENT_END = new Date("August 2, 2025 5:00:00").getTime();
 
 export const getEventState = () => {
   const now = new Date().getTime();
-  
+
   if (now < EVENT_START) {
     return "pre-event";
   } else if (now >= EVENT_START && now <= EVENT_END) {

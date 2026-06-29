@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,12 +9,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 1.6;
 }
 
+h1, h2 {
+  font-family: "Doto", sans-serif !important;
+}
+
 ::selection {
-  background-color: #e4b64be7;
+  background-color: #00FF41;
   color: black;
 }
 

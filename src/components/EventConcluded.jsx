@@ -55,7 +55,7 @@ function EventConcluded() {
               href="https://www.vjdataquesters.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#dba72e] hover:text-yellow-400 underline transition-colors duration-300"
+              className="text-[#dba72e] hover:text-green-500 underline transition-colors duration-300"
             >
               vjdataquesters.com
             </a>

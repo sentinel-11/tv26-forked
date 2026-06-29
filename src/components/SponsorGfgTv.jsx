@@ -6,7 +6,7 @@ const SponsorGfgTv = () => {
   
   return (
     <div className="text-center">
-      <div className="text-[#daa425] font-mono font-semibold mb-2 text-base tracking-wide">
+      <div className="text-[#13EC49] font-mono font-semibold mb-2 text-base tracking-wide">
         Knowledge Partner
       </div>
       <div className={`${sponsorBgColor} p-2 rounded flex justify-center`}>

@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 import router from "./pages";
 import ScrollToTop from "./components/ScrollToTop";
 import { PromoDiv } from "./components/PromoDiv";
+import AsciiFlowTrail from "./components/AsciiFlowTrail";
 
 function PromoSection() {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ function LayoutWrapper() {
     <>
       <Analytics />
       <ScrollToTop />
+      <AsciiFlowTrail />
       <div className="flex flex-col min-h-screen bg-blue-50/70">
         <Routes>
           {router.map((route, index) => (

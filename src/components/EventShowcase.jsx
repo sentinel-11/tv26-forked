@@ -15,7 +15,7 @@ export default function EventShowcase() {
   return (
     <div className="flex flex-col w-full bg text-white max-w-[90%] mx-auto px-4 select-none">
       <h2 className="text-center font-bold font-sans text-5xl sm:text-6xl  text-white mb-5 pb-5">
-        Featured <span className="text-[#daa425]">Events</span>
+        Featured <span className="text-[#13EC49]">Events</span>
       </h2>
 
       {/* Desktop View */}
@@ -77,7 +77,7 @@ export default function EventShowcase() {
                     >
                       {/* Date */}
                       <div className="flex items-center justify-end gap-1">
-                        <Calendar size={14} className="text-[#daa425]" />
+                        <Calendar size={14} className="text-[#13EC49]" />
                         <span className="font-mono leading-none pt-[1px]">
                           {new Date(event.date).toLocaleDateString("en-IN", {
                             day: "numeric",
@@ -95,7 +95,7 @@ export default function EventShowcase() {
                           }}
                           className="flex items-center justify-end gap-1 text-white/60 hover:underline mt-1"
                         >
-                          <ExternalLink size={14} className="text-[#daa425]" />
+                          <ExternalLink size={14} className="text-[#13EC49]" />
                           <span className="font-mono leading-none pt-[1px]">
                             Know more
                           </span>
@@ -107,7 +107,7 @@ export default function EventShowcase() {
                           rel="noopener noreferrer"
                           className="flex items-center justify-end gap-1 text-white/60 hover:underline mt-1"
                         >
-                          <ExternalLink size={14} className="text-[#daa425]" />
+                          <ExternalLink size={14} className="text-[#13EC49]" />
                           <span className="font-mono leading-none pt-[1px]">
                             Register
                           </span>
@@ -176,7 +176,7 @@ export default function EventShowcase() {
             </div>
 
             <div className="space-y-2 flex flex-col justify-between">
-              <h3 className="font-bold text-white font-sans text-base leading-tight group-hover:text-amber-400 transition-colors duration-300">
+              <h3 className="font-bold text-white font-sans text-base leading-tight group-hover:text-green-500 transition-colors duration-300">
                 {event.title}
               </h3>
 

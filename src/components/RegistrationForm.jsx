@@ -176,7 +176,7 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
   };
 
   return (
-    <div ref={containerRef} className="text-[#f2ca46] relative rounded-xl">
+    <div ref={containerRef} className="text-[#13EC49] relative rounded-xl">
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-3">
         {/* Header */}
@@ -187,7 +187,7 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
               alt="TechnoVista 2k25 Logo"
               className="w-12 h-12 m:w-114 md:h-114 lg:w-16 lg:h-16 object-contain bg-white rounded-xl"
             />
-            <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#f2ca46] via-yellow-300 to-[#daa425] bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#00FF41] via-green-400 to-[#00FF41] bg-clip-text text-transparent">
               TechnoVista 2k25
             </h1>
           </div>
@@ -196,19 +196,19 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
         {/* Form */}
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mx-auto px-2 pb-4">
-            <div className="bg-white/5 backdrop-blur-2xl rounded-3xl p-4 md:p-6 border border-[#f2ca46]/30 shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] my-2">
+            <div className="bg-white/5 backdrop-blur-2xl rounded-3xl p-4 md:p-6 border border-[#00FF41]/30 shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] my-2">
               <div className="grid gap-4 md:gap-6">
                 {/* Full Name */}
                 <div className="transform hover:opacity-90 transition-transform duration-300">
                   <div className="group relative">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       Full Name <span className="text-red-400">*</span>
                     </label>
                     <input
                       name="name"
                       type="text"
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent placeholder-[#daa425]"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent placeholder-[#00FF41]"
                       {...register("name", { required: "Name is required" })}
                     />
                     {errors.name && (
@@ -223,7 +223,7 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                 {/* College Selection */}
                 <div className="transform hover:opacity-90 transition-transform duration-300">
                   <div className="group relative">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       College <span className="text-red-400">*</span>
                     </label>
                     <div className="flex gap-6">
@@ -241,9 +241,9 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                             {...register("college", {
                               required: "College selection is required",
                             })}
-                            className="w-5 h-5 rounded-full border-2 border-[#daa425] accent-[#daa425] focus:ring-[#f2ca46] focus:outline-none transition duration-200 ease-in-out hover:scale-105"
+                            className="w-5 h-5 rounded-full border-2 border-[#00FF41] accent-[#00FF41] focus:ring-[#00FF41] focus:outline-none transition duration-200 ease-in-out hover:scale-105"
                           />
-                          <span className="text-yellow-300 group-hover:text-yellow-200 transition-colors duration-300">
+                          <span className="text-green-400 group-hover:text-yellow-200 transition-colors duration-300">
                             {option.label}
                           </span>
                         </label>
@@ -266,13 +266,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       College Name <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
                       placeholder="Enter your college name"
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent placeholder-[#daa425]"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent placeholder-[#00FF41]"
                       {...register("collegeName", {
                         required: "College name is required",
                       })}
@@ -289,11 +289,11 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                 {/* Branch & Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="transform hover:opacity-90 transition-transform duration-300">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       Branch <span className="text-red-400">*</span>
                     </label>
                     <select
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent"
                       {...register("branch", {
                         required: "Branch is required",
                       })}
@@ -322,11 +322,11 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     )}
                   </div>
                   <div className="transform hover:opacity-90 transition-transform duration-300">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       Section <span className="text-red-400">*</span>
                     </label>
                     <select
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent"
                       {...register("section", {
                         required: "Section is required",
                       })}
@@ -349,13 +349,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                 {/* Roll Number & Year */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="transform hover:opacity-90 transition-transform duration-300">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       College ID <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="text"
                       placeholder="Enter college ID"
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent placeholder-[#daa425]"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent placeholder-[#00FF41]"
                       {...register("rollno", {
                         required: "College ID is required",
                       })}
@@ -368,11 +368,11 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     )}
                   </div>
                   <div className="transform hover:opacity-90 transition-transform duration-300">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       Year <span className="text-red-400">*</span>
                     </label>
                     <select
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent"
                       {...register("year", { required: "Year is required" })}
                     >
                       <option value="">Select Year</option>
@@ -393,13 +393,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                 {/* Contact & Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="transform hover:opacity-90 transition-transform duration-300">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       Contact Number <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="tel"
                       placeholder="Enter 10-digit phone number"
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent placeholder-[#daa425]"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent placeholder-[#00FF41]"
                       {...register("phno", {
                         required: "Phone number is required",
                         pattern: {
@@ -416,13 +416,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     )}
                   </div>
                   <div className="transform hover:opacity-90 transition-transform duration-300">
-                    <label className="text-sm font-medium text-yellow-300 block mb-2">
+                    <label className="text-sm font-medium text-green-400 block mb-2">
                       Email <span className="text-red-400">*</span>
                     </label>
                     <input
                       type="email"
                       placeholder="Enter your email"
-                      className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent placeholder-[#daa425]"
+                      className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent placeholder-[#00FF41]"
                       {...register("email", {
                         required: "Email is required",
                         pattern: {
@@ -450,13 +450,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     {/* Payment QR Code Section */}
                     <div className="transform hover:opacity-90 transition-transform duration-300">
                       <div className="group relative">
-                        <label className="text-sm font-medium text-yellow-300 block mb-2">
+                        <label className="text-sm font-medium text-green-400 block mb-2">
                           Payment QR Code{" "}
                           <span className="text-red-400">*</span>
                         </label>
-                        <div className="w-full p-4 bg-black/30 border border-[#daa425] rounded-md">
+                        <div className="w-full p-4 bg-black/30 border border-[#00FF41] rounded-md">
                           <div className="flex flex-col items-center space-y-3">
-                            <h3 className="text-lg font-semibold text-yellow-300">
+                            <h3 className="text-lg font-semibold text-green-400">
                               Scan QR Code to Pay ₹
                               {watchCollege === "VNRVJIET" ? "170" : "250"}
                             </h3>
@@ -471,7 +471,7 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                                 className="w-48 h-48 md:w-56 md:h-56 object-contain rounded-lg"
                               />
                             </div>
-                            <p className="text-sm text-yellow-300/80 text-center">
+                            <p className="text-sm text-green-400/80 text-center">
                               After payment, upload screenshot below and enter
                               transaction details
                             </p>
@@ -483,7 +483,7 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     {/* File Upload Section */}
                     <div className="transform hover:opacity-90 transition-transform duration-300">
                       <div className="group relative">
-                        <label className="text-sm font-medium text-yellow-300 block mb-2">
+                        <label className="text-sm font-medium text-green-400 block mb-2">
                           Payment Screenshot{" "}
                           <span className="text-red-400">*</span>
                           <span className="block text-xs font-normal text-yellow-200 mt-1">
@@ -521,14 +521,14 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                                 setFile(imageFile); // Fallback to original file
                               }
                             }}
-                            className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md 
-                               focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent
+                            className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md 
+                               focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent
                                file:mr-4 file:py-1 file:px-3 file:rounded-md file:border-0 
-                               file:text-sm file:font-medium file:bg-[#f2ca46] file:text-black
-                               hover:file:bg-[#daa425] file:cursor-pointer cursor-pointer"
+                               file:text-sm file:font-medium file:bg-[#00FF41] file:text-black
+                               hover:file:bg-[#00FF41] file:cursor-pointer cursor-pointer"
                           />
                           {file && (
-                            <p className="text-yellow-300/80 text-sm mt-1 flex items-center gap-1">
+                            <p className="text-green-400/80 text-sm mt-1 flex items-center gap-1">
                               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
                               File selected: {file.name}
                             </p>
@@ -557,13 +557,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                         await fetchQrCode();
                       }}
                       className="group relative inline-flex items-center justify-center gap-2 px-4 py-1
-                                      bg-gradient-to-r from-[#f2ca46] via-[#daa425] to-yellow-600
+                                      bg-gradient-to-r from-[#00FF41] via-[#00FF41] to-green-700
                                       text-black font-bold text-xl rounded-2xl shadow-xl
                                       transition-all duration-500 ease-out
-                                      hover:shadow-2xl hover:shadow-[#f2ca46]/50
-                                      focus:outline-none focus:ring-4 focus:ring-[#f2ca46]/60
-                                      border-2 border-[#f2ca46]/30
-                                      before:absolute before:inset-0 before:bg-gradient-to-r before:from-yellow-300/20 before:to-transparent before:rounded-2xl before:opacity-0 before:transition-opacity before:duration-300
+                                      hover:shadow-2xl hover:shadow-[#00FF41]/50
+                                      focus:outline-none focus:ring-4 focus:ring-[#00FF41]/60
+                                      border-2 border-[#00FF41]/30
+                                      before:absolute before:inset-0 before:bg-gradient-to-r before:from-green-400/20 before:to-transparent before:rounded-2xl before:opacity-0 before:transition-opacity before:duration-300
                                       hover:before:opacity-100
                                       overflow-hidden"
                     >
@@ -592,11 +592,11 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                     transition={{ duration: 0.3, delay: 0.1 }}
                   >
                     <div className="transform hover:opacity-90 transition-transform duration-300">
-                      <label className="text-sm font-medium text-yellow-300 block mb-2">
+                      <label className="text-sm font-medium text-green-400 block mb-2">
                         Payment Platform <span className="text-red-400">*</span>
                       </label>
                       <select
-                        className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent"
+                        className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent"
                         {...register("paymentplatform", {
                           required: showPaymentFields
                             ? "Please select a payment platform"
@@ -623,13 +623,13 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                       )}
                     </div>
                     <div className="transform hover:opacity-90 transition-transform duration-300">
-                      <label className="text-sm font-medium text-yellow-300 block mb-2">
+                      <label className="text-sm font-medium text-green-400 block mb-2">
                         Transaction ID <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="text"
                         placeholder="Enter transaction ID"
-                        className="w-full px-4 py-2 bg-black text-yellow-300 border border-[#daa425] rounded-md focus:outline-none focus:ring-2 focus:ring-[#f2ca46] focus:border-transparent placeholder-[#daa425]"
+                        className="w-full px-4 py-2 bg-black text-green-400 border border-[#00FF41] rounded-md focus:outline-none focus:ring-2 focus:ring-[#00FF41] focus:border-transparent placeholder-[#00FF41]"
                         {...register("transactionid", {
                           required: showPaymentFields
                             ? "Transaction ID is required"
@@ -649,24 +649,24 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                 {/* Submit Button - Only show after payment fields are visible */}
                 {showPaymentFields && (
                   <>
-                    <div className="flex items-start gap-3 mt-4 p-4 bg-black/20 border border-[#daa425]/40 rounded-xl">
+                    <div className="flex items-start gap-3 mt-4 p-4 bg-black/20 border border-[#00FF41]/40 rounded-xl">
                       <input
                         type="checkbox"
                         id="terms-checkbox"
                         checked={acceptedTerms}
                         onChange={(e) => setAcceptedTerms(e.target.checked)}
-                        className="mt-1 w-4 h-4 text-black bg-black border-[#daa425] rounded focus:ring-[#f2ca46] focus:ring-0 focus:outline-none accent-[#f2ca46] cursor-pointer"
+                        className="mt-1 w-4 h-4 text-black bg-black border-[#00FF41] rounded focus:ring-[#00FF41] focus:ring-0 focus:outline-none accent-[#00FF41] cursor-pointer"
                       />
                       <label
                         htmlFor="terms-checkbox"
-                        className="text-sm text-yellow-300 leading-relaxed  "
+                        className="text-sm text-green-400 leading-relaxed  "
                       >
                         I agree to the{" "}
                         <a
                           href="/technovista/terms-and-conditions"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#f2ca46] underline hover:text-yellow-200 transition-colors duration-200 font-medium"
+                          className="text-[#13EC49] underline hover:text-yellow-200 transition-colors duration-200 font-medium"
                         >
                           Terms & Conditions
                         </a>
@@ -685,11 +685,11 @@ const FormComp = ({ setLoadingStatus, setSubmitStatus }) => {
                         disabled={!acceptedTerms}
                         type="submit"
                         className="group relative inline-flex items-center justify-center gap-3 px-6 py-2 mb-2
-        bg-gradient-to-r from-[#f2ca46] via-[#daa425] to-yellow-600
+        bg-gradient-to-r from-[#00FF41] via-[#00FF41] to-green-700
         text-black font-bold text-lg rounded-2xl shadow-md
         transition-all duration-300 ease-out
-        hover:shadow-xl hover:shadow-[#daa425]/40
-        focus:outline-none focus:ring-4 focus:ring-[#f2ca46]/50
+        hover:shadow-xl hover:shadow-[#00FF41]/40
+        focus:outline-none focus:ring-4 focus:ring-[#00FF41]/50
         disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         <span className="tracking-wide">Submit</span>
@@ -720,14 +720,14 @@ const SubmittedComp = () => {
       animate="animate"
       exit="exit"
       variants={transitionVariants}
-      className="flex flex-col items-center justify-center min-h-[80vh] text-center bg-black text-yellow-300 px-4"
+      className="flex flex-col items-center justify-center min-h-[80vh] text-center bg-black text-green-400 px-4"
     >
       {/* Check Icon Container */}
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ type: "spring", stiffness: 150, damping: 10, delay: 0.2 }}
-        className="bg-[#f2ca46] text-black p-4 rounded-full shadow-lg"
+        className="bg-[#00FF41] text-black p-4 rounded-full shadow-lg"
       >
         <CheckCircle size={50} />
       </motion.div>
@@ -742,7 +742,7 @@ const SubmittedComp = () => {
         Thank you for registering. You{"'"}ll receive your pass via email within
         48 hours.
         <br />
-        <span className="text-yellow-300 font-medium">
+        <span className="text-green-400 font-medium">
           Please check your spam folder as well.
         </span>
       </p>
@@ -753,8 +753,8 @@ const SubmittedComp = () => {
         whileTap={{ scale: 0.95 }}
         onClick={() => navigate("/technovista/events")}
         className="mt-8 inline-flex items-center gap-2 px-6 py-3 font-semibold rounded-full shadow-md 
-          bg-gradient-to-r from-[#f2ca46] via-[#daa425] to-yellow-600 
-          text-black hover:shadow-[#daa425]/30 transition-all duration-300"
+          bg-gradient-to-r from-[#00FF41] via-[#00FF41] to-green-700 
+          text-black hover:shadow-[#00FF41]/30 transition-all duration-300"
       >
         <ExternalLink size={18} />
         Explore Events
@@ -765,9 +765,9 @@ const SubmittedComp = () => {
 
 const LoadingComp = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-yellow-300 h-full min-h-[90vh]">
+    <div className="flex flex-col items-center justify-center text-green-400 h-full min-h-[90vh]">
       <motion.div
-        className="relative backdrop-blur-xl border h-full border-[#daa425]/30 shadow-[0_0_40px_rgba(255,255,255,0.05)] rounded-2xl p-10 min-w-[80%]  lg:w-full text-center flex flex-col items-center justify-center min-h-[90vh]"
+        className="relative backdrop-blur-xl border h-full border-[#00FF41]/30 shadow-[0_0_40px_rgba(255,255,255,0.05)] rounded-2xl p-10 min-w-[80%]  lg:w-full text-center flex flex-col items-center justify-center min-h-[90vh]"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -796,14 +796,14 @@ const FormClosedComp = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center text-yellow-300 h-full min-h-[90vh]">
+    <div className="flex flex-col items-center justify-center text-green-400 h-full min-h-[90vh]">
       <motion.div
-        className="relative backdrop-blur-xl border border-[#daa425]/30 shadow-[0_0_40px_rgba(255,255,255,0.05)] rounded-2xl p-10 min-w-[80%] lg:w-full text-center flex flex-col items-center justify-center min-h-[90vh]"
+        className="relative backdrop-blur-xl border border-[#00FF41]/30 shadow-[0_0_40px_rgba(255,255,255,0.05)] rounded-2xl p-10 min-w-[80%] lg:w-full text-center flex flex-col items-center justify-center min-h-[90vh]"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Lock size={48} className="text-yellow-300 mb-4" />
+        <Lock size={48} className="text-green-400 mb-4" />
         <motion.p
           animate="animate"
           className="text-yellow-200 font-medium text-base"
@@ -830,7 +830,7 @@ const RegistrationForm = () => {
     <>
       <NavbarTv />
       <motion.div
-        className="bg-black rounded-2xl shadow-2xl lg:border-2 border-[#daa425]/30 relative lg:h-[90vh]"
+        className="bg-black rounded-2xl shadow-2xl lg:border-2 border-[#00FF41]/30 relative lg:h-[90vh]"
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
         transition={{ duration: 1, ease: "easeOut" }}

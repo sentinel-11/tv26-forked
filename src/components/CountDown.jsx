@@ -62,7 +62,7 @@ function CountDown({ isVisible }) {
               className={`text-5xl md:text-8xl font-bold text-center mb-4 ${
                 eventState === "live-event" 
                   ? "text-[#dba72e]" 
-                  : "text-yellow-400"
+                  : "text-green-500"
               }`}
               style={{
                 textShadow: eventState === "live-event" 
@@ -91,7 +91,7 @@ function CountDown({ isVisible }) {
                     className="flex flex-col items-center justify-center"
                   >
                     <div className="rounded-lg p-3 md:p-4 w-full aspect-square flex flex-col items-center justify-center">
-                      <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-yellow-400 mb-1">
+                      <span className="text-5xl md:text-6xl lg:text-7xl font-bold text-green-500 mb-1">
                         {value.toString().padStart(2, "0")}
                       </span>
                       <span className="font-mono text-xs md:text-sm uppercase tracking-wider text-gray-400">
@@ -103,7 +103,7 @@ function CountDown({ isVisible }) {
               </div>
               <div className="flex justify-center items-center mb-6">
                 <button
-                  className="font-sans cta-button px-6 sm:px-8 py-3 sm:py-4  text-lg sm:text-xl md:text-xl bg-[#daa425] text-black rounded-2xl shadow-[0_0_15px_rgba(255,215,0,0.5)] font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.8)] transition-all duration-300 ease-in-out mt-20 sm:mt-16"
+                  className="font-sans cta-button px-6 sm:px-8 py-3 sm:py-4  text-lg sm:text-xl md:text-xl bg-[#00FF41] text-black rounded-2xl shadow-[0_0_15px_rgba(255,215,0,0.5)] font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.8)] transition-all duration-300 ease-in-out mt-20 sm:mt-16"
                   onClick={() => navigate("/technovista/register")}
                 >
                   Register Now

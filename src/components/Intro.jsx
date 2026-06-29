@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import ASCIIReveal from "./ASCIIReveal";
 
 const Intro = ({ introPlay, onFinish }) => {
   const controls = useAnimation();
@@ -68,9 +69,8 @@ const Intro = ({ introPlay, onFinish }) => {
             className="flex flex-col items-center justify-center gap-4 text-center"
           >
             {/* Logo */}
-            <motion.img
-              src="/events/Technovista2025/tv25-icons/tv-logo-ani.gif"
-              className="h-24 sm:h-28 md:h-40 drop-shadow-2xl bg-white rounded-2xl"
+            <motion.div
+              className="w-64 sm:w-80 md:w-96 h-auto"
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{
@@ -80,7 +80,17 @@ const Intro = ({ introPlay, onFinish }) => {
                 stiffness: 120,
                 damping: 12,
               }}
-            />
+            >
+              <ASCIIReveal
+                image={{ src: "/events/Technovista2025/tv25-icons/tv-logo-ani.gif", alt: "Technovista Logo" }}
+                trigger="auto"
+                columns={60}
+                fontSize={14}
+                textColor="#ffffff"
+                backgroundColor="transparent"
+                revealDelayMs={500}
+              />
+            </motion.div>
 
             {/* TECHNOVISTA word in one line */}
             <motion.div className="flex flex-row justify-center whitespace-nowrap">
@@ -88,8 +98,9 @@ const Intro = ({ introPlay, onFinish }) => {
                 <motion.span
                   key={index}
                   variants={letterVariants}
-                  className={`font-extrabold text-3xl sm:text-5xl md:text-7xl px-1 font-orbitron ${
-                    index >= 6 ? "text-amber-400" : "text-white"
+                  style={{ fontFamily: "'Doto', sans-serif", fontWeight: 700 }}
+                  className={`font-extrabold text-3xl sm:text-5xl md:text-7xl px-1 ${
+                    index >= 6 ? "text-green-500" : "text-white"
                   }`}
                 >
                   {letter}
@@ -103,7 +114,8 @@ const Intro = ({ introPlay, onFinish }) => {
                 <motion.span
                   key={`tail-${idx}`}
                   variants={letterVariants}
-                  className="font-bold text-2xl sm:text-4xl md:text-7xl px-1 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-500 font-orbitron animate-pulse"
+                  style={{ fontFamily: "'Doto', sans-serif", fontWeight: 700 }}
+                  className="font-bold text-2xl sm:text-4xl md:text-7xl px-1 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 animate-pulse"
                 >
                   {letter}
                 </motion.span>

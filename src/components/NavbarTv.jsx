@@ -38,7 +38,7 @@ function NavbarTv() {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50  border-b border-yellow-500/10 backdrop-blur-lg box-border">
+    <nav className="fixed top-0 left-0 w-full z-50  border-b border-green-600/10 backdrop-blur-lg box-border">
       <div className="mx-auto max-w-screen px-3 sm:px-5 lg:px-4">
         <div className="flex justify-between items-center h-16">
           {/* Left: Logos and cross */}
@@ -68,14 +68,14 @@ function NavbarTv() {
             {location.pathname !== "/technovista" && (
               <button
                 onClick={() => handleNavigate("/technovista")}
-                className="font-mono text-[#daa425] px-5 py-1.5 rounded-lg font-semibold hover:bg-[#121210] transition-all duration-300"
+                className="font-mono text-[#13EC49] px-5 py-1.5 rounded-lg font-semibold hover:bg-[#121210] transition-all duration-300"
               >
                 Home
               </button>
             )}
             <button
               onClick={() => handleNavigate("/technovista/events")}
-              className="font-mono text-[#daa425] px-5 py-1.5 rounded-lg font-semibold hover:bg-[#121210] transition-all duration-300"
+              className="font-mono text-[#13EC49] px-5 py-1.5 rounded-lg font-semibold hover:bg-[#121210] transition-all duration-300"
             >
               All Events
             </button>
@@ -96,27 +96,27 @@ function NavbarTv() {
       {menuOpen && (
         <div
           ref={menuRef}
-          className="md:hidden absolute top-16 right-4 max-w-[90vw] w-48 z-50 rounded-xl shadow-xl border border-yellow-500/10 backdrop-blur-lg bg-[#1a1a1a]"
+          className="md:hidden absolute top-16 right-4 max-w-[90vw] w-48 z-50 rounded-xl shadow-xl border border-green-600/10 backdrop-blur-lg bg-[#1a1a1a]"
         >
-          <div className="flex flex-col divide-y divide-yellow-500/10">
+          <div className="flex flex-col divide-y divide-green-600/10">
             {location.pathname !== "/technovista" && (
               <button
                 onClick={() => handleNavigate("/technovista")}
-                className="px-4 py-3 text-left font-mono text-white hover:text-yellow-400 transition-all"
+                className="px-4 py-3 text-left font-mono text-white hover:text-green-500 transition-all"
               >
                 Home
               </button>
             )}
             <button
               onClick={() => handleNavigate("/technovista/events")}
-              className="px-4 py-3 text-left font-mono text-white hover:text-yellow-400 transition-all"
+              className="px-4 py-3 text-left font-mono text-white hover:text-green-500 transition-all"
             >
               All Events
             </button>
             {location.pathname !== "/technovista/register" && (
               <button
                 onClick={() => handleNavigate("/technovista/register")}
-                className="px-4 py-3 text-left font-mono text-white hover:text-yellow-400 transition-all"
+                className="px-4 py-3 text-left font-mono text-white hover:text-green-500 transition-all"
               >
                 Register
               </button>

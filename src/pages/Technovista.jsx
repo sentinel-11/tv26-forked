@@ -100,7 +100,7 @@ const Technovista = () => {
         <>
           <div
             ref={cursorRef}
-            className="fixed w-4 h-4 rounded-full bg-[#daa425] pointer-events-none z-[9999]"
+            className="fixed w-4 h-4 rounded-full bg-[#00FF41] pointer-events-none z-[9999]"
             style={{
               mixBlendMode: "normal",
               transform: "translate(-50%, -50%)",
@@ -110,7 +110,7 @@ const Technovista = () => {
           />
           <div
             ref={cursorTrailRef}
-            className="fixed w-8 h-8 rounded-full bg-[#daa425]/30 pointer-events-none z-[9998]"
+            className="fixed w-8 h-8 rounded-full bg-[#00FF41]/30 pointer-events-none z-[9998]"
             style={{
               mixBlendMode: "normal",
               transform: "translate(-50%, -50%)",
@@ -142,7 +142,7 @@ const Technovista = () => {
             <section className="md:w-[90%] h-full mx-auto">
               <h4 className="font-bold text-center text-[40px] md:text-[30px] lg:text-[50px] text-white">
                 Technovista-2k24{" "}
-                <span className="text-[#daa425]">Glimpses</span>
+                <span className="text-[#13EC49]">Glimpses</span>
               </h4>
               <div className="pt-4">
                 <div className="w-full mx-auto">
@@ -153,7 +153,7 @@ const Technovista = () => {
           </div>
 
           <div className="w-full overflow-hidden text-center select-none box-border">
-            <h1 className="inline-block max-w-full text-[clamp(48px,14vw,200px)] sm:text-[clamp(64px,16vw,280px)] leading-none font-bold text-yellow-600/40 tracking-tight overflow-hidden">
+            <h1 className="inline-block max-w-full text-[clamp(48px,14vw,200px)] sm:text-[clamp(64px,16vw,280px)] leading-none font-bold text-green-700/40 tracking-tight overflow-hidden">
               TECHNOVISTA
             </h1>
           </div>

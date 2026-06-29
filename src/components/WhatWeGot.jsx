@@ -91,7 +91,7 @@ function WhatWeGot() {
           </h1>
           <motion.span
             className={`
-              inline-block text-center break-words leading-tight max-w-full px-2 font-bold text-[#daa425] pt-2
+              inline-block text-center break-words leading-tight max-w-full px-2 font-bold text-[#00FF41] pt-2
               ${
                 isMalayalam
                   ? "text-2xl sm:text-5xl md:text-7xl"
@@ -130,7 +130,7 @@ function WhatWeGot() {
                     className={`absolute inset-0 rounded-full bg-gradient-to-br ${stat.color} blur-md opacity-70`}
                   ></div>
                   <i
-                    className={`${stat.icon} text-3xl sm:text-4xl md:text-5xl relative z-10 text-[#daa425]`}
+                    className={`${stat.icon} text-3xl sm:text-4xl md:text-5xl relative z-10 text-[#00FF41]`}
                   />
                 </div>
 
@@ -142,13 +142,13 @@ function WhatWeGot() {
                   {stat.desc}
                 </p>
 
-                <p className="font-mono text-xs sm:text-sm font-medium bg-gradient-to-r from-[#daa425] to-[#f2ca46] bg-clip-text text-transparent text-center">
+                <p className="font-mono text-xs sm:text-sm font-medium bg-gradient-to-r from-[#00FF41] to-[#00FF41] bg-clip-text text-transparent text-center">
                   {stat.highlight}
                 </p>
 
                 {/* Animated border effect */}
                 <motion.div
-                  className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent"
+                  className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   transition={{ duration: 1, delay: 0.3 }}
@@ -162,35 +162,35 @@ function WhatWeGot() {
 
       {/* Description Section */}
       <section className="lg:m-6 from-yellow-900/20 to-black/50 rounded-xl py-4 sm:p-6 md:p-8 max-w-[90%] md:max-w-6xl w-full text-left">
-        <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-[#daa425] mb-4 tracking-wide">
+        <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-bold text-[#13EC49] mb-4 tracking-wide">
           A Data Science Tech Carnival
         </h2>
         <p className="lg:mt-10 text-justify font-mono text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
           The annual technical fest{" "}
           <span className="font-bold text-white">"TechnoVista"</span> is a
           flagship initiative organized by the{" "}
-          <span className="text-[#daa425] font-semibold">
+          <span className="text-[#13EC49] font-semibold">
             Data Science Branch of CSE – (CyS, DS)
           </span>{" "}
-          <span className="text-[#daa425] font-semibold">
+          <span className="text-[#13EC49] font-semibold">
             and the AI&amp;DS Department of VNRVJIET
           </span>
           . Since its inception, it has emerged as a high-energy platform that
-          blends <span className="text-[#daa425]">innovation</span>,{" "}
-          <span className="text-[#daa425]">skill</span>, and{" "}
-          <span className="text-[#daa425]">creativity</span>. The{" "}
+          blends <span className="text-[#13EC49]">innovation</span>,{" "}
+          <span className="text-[#13EC49]">skill</span>, and{" "}
+          <span className="text-[#13EC49]">creativity</span>. The{" "}
           <span className="text-white font-semibold">2025 edition</span>,
           scheduled from{" "}
           <span className="text-white">July 31st to August 2nd</span>, showcases{" "}
           <span className="text-white font-semibold">8 exciting events</span>{" "}
           including{" "}
-          <span className="text-[#daa425]">machine learning challenges</span>, a{" "}
-          <span className="text-[#daa425]">creative blogathon</span>,{" "}
-          <span className="text-[#daa425]">data science problem-solving</span>,
-          a <span className="text-[#daa425]">coding contest</span>,{" "}
-          <span className="text-[#daa425]">hands-on workshops</span>,{" "}
-          <span className="text-[#daa425]">expert guest lectures</span>, and a
-          thrilling <span className="text-[#daa425]">24-hour hackathon</span>.
+          <span className="text-[#13EC49]">machine learning challenges</span>, a{" "}
+          <span className="text-[#13EC49]">creative blogathon</span>,{" "}
+          <span className="text-[#13EC49]">data science problem-solving</span>,
+          a <span className="text-[#13EC49]">coding contest</span>,{" "}
+          <span className="text-[#13EC49]">hands-on workshops</span>,{" "}
+          <span className="text-[#13EC49]">expert guest lectures</span>, and a
+          thrilling <span className="text-[#13EC49]">24-hour hackathon</span>.
           With{" "}
           <span className="text-white font-semibold">
             600+ tech enthusiasts
@@ -198,9 +198,9 @@ function WhatWeGot() {
           expected,{" "}
           <span className="font-bold text-white">TechnoVista 2K25</span>{" "}
           promises a vibrant confluence of{" "}
-          <span className="text-[#daa425]">ideas</span>,{" "}
-          <span className="text-[#daa425]">competition</span>, and{" "}
-          <span className="text-[#daa425]">collaboration</span> — celebrating
+          <span className="text-[#13EC49]">ideas</span>,{" "}
+          <span className="text-[#13EC49]">competition</span>, and{" "}
+          <span className="text-[#13EC49]">collaboration</span> — celebrating
           the spirit of technology like never before.
         </p>
       </section>

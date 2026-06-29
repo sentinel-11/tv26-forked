@@ -99,7 +99,7 @@ const TvDevs = () => {
   );
 
   const DevCardSkeleton = () => (
-    <div className="w-[220px] h-[340px] rounded-3xl bg-gradient-to-br from-[#daa425] to-[#f5c645] p-[1px] shadow-lg shadow-[#daa425]/20">
+    <div className="w-[220px] h-[340px] rounded-3xl bg-gradient-to-br from-[#00FF41] to-[#00cc33] p-[1px] shadow-lg shadow-[#00FF41]/20">
       <div className="w-full h-full bg-black rounded-3xl overflow-hidden flex flex-col">
         <div className="flex-1 relative">
           <Skeleton variant="technovista" className="w-full h-full rounded-t-3xl" />
@@ -131,7 +131,7 @@ const TvDevs = () => {
 
         {/* Main Card - hide until image is loaded */}
         <div
-          className={`w-[220px] h-[340px] rounded-3xl bg-gradient-to-br from-[#daa425] to-[#f5c645] p-[1px] transition-all duration-300 ease-in-out shadow-lg shadow-[#daa425]/20 hover:shadow-xl hover:shadow-[#daa425]/30 ${
+          className={`w-[220px] h-[340px] rounded-3xl bg-gradient-to-br from-[#00FF41] to-[#00cc33] p-[1px] transition-all duration-300 ease-in-out shadow-lg shadow-[#00FF41]/20 hover:shadow-xl hover:shadow-[#00FF41]/30 ${
             !loadedImages[index] ? "absolute opacity-0 pointer-events-none" : ""
           }`}
         >
@@ -150,14 +150,14 @@ const TvDevs = () => {
               <h3 className="text-lg font-bold text-white tracking-wide">
                 {dev.name}
               </h3>
-              <p className="text-xs text-[#daa425] mb-2">{dev.role}</p>
+              <p className="text-xs text-[#13EC49] mb-2">{dev.role}</p>
               <div className="flex justify-center space-x-4 mt-2 md:hidden">
                 {dev.linkedin && (
                   <a
                     href={dev.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#daa425] transition-colors"
+                    className="text-gray-300 hover:text-[#13EC49] transition-colors"
                   >
                     <FaLinkedinIn className="w-5 h-5" />
                   </a>
@@ -167,7 +167,7 @@ const TvDevs = () => {
                     href={dev.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-[#daa425] transition-colors"
+                    className="text-gray-300 hover:text-[#13EC49] transition-colors"
                   >
                     <FaGithub className="w-5 h-5" />
                   </a>
@@ -178,8 +178,8 @@ const TvDevs = () => {
         </div>
 
         {!isMobile && loadedImages[index] && (
-          <div className="absolute top-0 left-0 w-full h-full opacity-0 pointer-events-none scale-90 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:scale-100 z-10 flex flex-col justify-center items-center text-center border border-[#daa425] shadow-2xl shadow-[#daa425]/30 bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-3xl p-6 transition-all duration-300 ease-in-out">
-            <div className="w-[100px] h-[100px] bg-gradient-to-br from-[#daa425] to-[#f5c645] rounded-full flex justify-center items-center p-[2px] mb-4 shadow-md">
+          <div className="absolute top-0 left-0 w-full h-full opacity-0 pointer-events-none scale-90 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:scale-100 z-10 flex flex-col justify-center items-center text-center border border-[#00FF41] shadow-2xl shadow-[#00FF41]/30 bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-3xl p-6 transition-all duration-300 ease-in-out">
+            <div className="w-[100px] h-[100px] bg-gradient-to-br from-[#00FF41] to-[#00cc33] rounded-full flex justify-center items-center p-[2px] mb-4 shadow-md">
               <div className="w-[96px] h-[96px] rounded-full overflow-hidden border-2 border-[#1a1a1a]">
                 <img
                   src={dev.image}
@@ -190,7 +190,7 @@ const TvDevs = () => {
             </div>
 
             <div className="mb-4">
-              <h3 className="text-xl font-bold text-[#daa425] mb-1">
+              <h3 className="text-xl font-bold text-[#13EC49] mb-1">
                 {dev.fullName}
               </h3>
               <p className="text-sm text-white mb-1">{dev.role}</p>
@@ -201,7 +201,7 @@ const TvDevs = () => {
                 href={dev.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-[#daa425]/20 rounded-full flex items-center justify-center transition hover:bg-[#daa425]/40"
+                className="w-9 h-9 bg-[#00FF41]/20 rounded-full flex items-center justify-center transition hover:bg-[#00FF41]/40"
               >
                 <FaLinkedinIn className="text-white text-xl" />
               </a>
@@ -209,7 +209,7 @@ const TvDevs = () => {
                 href={dev.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-[#daa425]/20 rounded-full flex items-center justify-center transition hover:bg-[#daa425]/40"
+                className="w-9 h-9 bg-[#00FF41]/20 rounded-full flex items-center justify-center transition hover:bg-[#00FF41]/40"
               >
                 <FaGithub className="text-white text-xl" />
               </a>
@@ -225,7 +225,7 @@ const TvDevs = () => {
       <NavbarTv />
 
       <div className="pt-24 pb-16 px-6">
-        <h1 className="text-[40px] sm:text-[50px] md:text-[60px] font-bold text-center text-[#daa425]">
+        <h1 className="text-[40px] sm:text-[50px] md:text-[60px] font-bold text-center text-[#13EC49]">
           Developed with 💛 by Our Team
         </h1>
         <p className="text-gray-400 text-lg text-center mt-2">

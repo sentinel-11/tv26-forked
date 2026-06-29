@@ -78,7 +78,7 @@
 //       <div className="min-h-screen px-4 sm:px-6 py-16 sm:py-24 bg-black text-white">
 //         <div className="max-w-2xl mx-auto">
 //           <Reveal>
-//             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 mb-6 sm:mb-8 md:mb-10 text-center tracking-widest drop-shadow-lg">
+//             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-500 mb-6 sm:mb-8 md:mb-10 text-center tracking-widest drop-shadow-lg">
 //               🔔 Latest Updates
 //             </h2>
 //           </Reveal>
@@ -88,8 +88,8 @@
 //               .reverse()
 //               .map((update, index) => (
 //                 <Reveal key={index}>
-//                   <div className="border-l-4 border-yellow-500 pl-4 sm:pl-6 py-3 sm:py-4 rounded shadow-md relative">
-//                     <p className="text-xs sm:text-sm text-yellow-300 uppercase tracking-wider mb-1">
+//                   <div className="border-l-4 border-green-600 pl-4 sm:pl-6 py-3 sm:py-4 rounded shadow-md relative">
+//                     <p className="text-xs sm:text-sm text-green-400 uppercase tracking-wider mb-1">
 //                       {update.date}
 //                     </p>
 //                     <div className="flex items-center justify-between">
@@ -98,7 +98,7 @@
 //                       </h3>
 //                       <button
 //                         onClick={update.handler}
-//                         className="flex items-center gap-1 text-xs sm:text-sm text-yellow-400 hover:text-yellow-300 hover:bg-yellow-400/10 px-2 py-1 rounded transition-all duration-200"
+//                         className="flex items-center gap-1 text-xs sm:text-sm text-green-500 hover:text-green-400 hover:bg-green-500/10 px-2 py-1 rounded transition-all duration-200"
 //                       >
 //                         <span>View</span>
 //                         <ExternalLink size={14} />
